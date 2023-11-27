@@ -11,7 +11,7 @@ function Login() {
   const handleLogin = () => {
     if (username && password) {
       login();
-      navigate('/blogList');
+      navigate('/blogList', { state: { username } });
     } else {
       alert('Please enter your username and password.');
     }

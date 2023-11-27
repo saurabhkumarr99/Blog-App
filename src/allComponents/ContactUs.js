@@ -1,6 +1,10 @@
 import React from 'react';
+import {useState } from 'react';
 
 function ContactUs() {
+
+  const [data,setdata]= useState("");
+  const [response,setresponse]= useState("");
   return (
     <section className="mb-4">
       <div className="about-section bg-primary">
@@ -13,7 +17,7 @@ function ContactUs() {
             <div className="row">
               <div className="col-md-6">
                 <div className="md-form mb-0">
-                  <input type="text" id="name" name="name" className="form-control" />
+                  <input type="text" id="name" name="name" value={data} className="form-control" onChange={(e) => setdata(e.target.value)}/>
                   <label htmlFor="name" className="">Your name</label>
                 </div>
               </div>
@@ -42,7 +46,7 @@ function ContactUs() {
             </div>
           </form>
           <div className="text-center text-md-left">
-            <a className="btn btn-primary">Send</a>
+            <button className="btn btn-primary" onClick={() => setresponse("Soon you recieve response")}>Send</button>
           </div>
           <div className="status"></div>
         </div>
@@ -60,7 +64,9 @@ function ContactUs() {
           </ul>
         </div>
       </div>
+      <h2>{response}</h2>
     </section>
+    
   );
 }
 

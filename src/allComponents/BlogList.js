@@ -1,14 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link ,useLocation } from 'react-router-dom';
 import blogData from './DummyData/blogs'; 
 
 function BlogList() {
+
+  const location = useLocation();
+  const username = location.state?.username || '';
+
+
   return (
     <div>
 
       <section className="hero bg-primary text-white text-center py-5">
         <div className="container">
           <h1 className="display-4">All Blogs</h1>
+          <p>Welcome, {username}!</p>
           <p className="lead">
             Explore a world of knowledge, creativity, and inspiration.
           </p>

@@ -15,7 +15,7 @@ Welcome to the Blog App! This platform enables users to view,  comment on blogs.
 
 ## Features
 
-- **Login:** When user login , he can access the bloglist and details.
+- **Login:** When user (any username/pass) login , he can access the bloglist and details.
 - **Logout:** Aftre logout navbar changes and user redirect to homepage.
 - **All Blogs:** View a list of all blogs available on the platform.
 - **Read Blog:** Dive into the content of each blog to explore new ideas and stories.
@@ -48,9 +48,17 @@ Follow these steps to run the Blog App locally:
    ``` 
 
 3. **Run:**
-
+ - `Start Project`
    ```bash
       npm start
+   ``` 
+ - `Test Project`
+   ```bash
+      npm test
+   ``` 
+ - `Test Coverage`
+   ```bash
+      npm run coverage
    ``` 
 
 
@@ -104,6 +112,16 @@ The project follows a structured directory layout for better organization:
   <img src="./ScreenShots/5-All Blogs.png" alt="Screenshot 2" width="300" />
   <img src="./ScreenShots/6.a-BlogDetWithoutComment.png" alt="Screenshot 1" width="300" />
   <img src="./ScreenShots/6.B-BlogDetWithComment.png" alt="Screenshot 2" width="300" />
+</p
+
+- `Unit Test`
+<p align="center">
+  <img src="./ScreenShots/Test/UnitTest.png" alt="UnitTest" width="300" />
+</p
+
+- `Jmeter Performance`
+<p align="center">
+  <img src="./ScreenShots/Jmeter/JmeterResult.png" alt="JmeterResult" width="300" />
 </p
 
 

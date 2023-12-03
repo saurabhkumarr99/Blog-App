@@ -67,6 +67,13 @@ Follow these steps to run the Blog App locally:
       npm run coverage
    ``` 
 
+- `Selenium Testing`
+
+   Go to SeleniumTest folder and run -
+   ```bash
+      node LoginTest
+   ``` 
+
 
 ## Usage
 

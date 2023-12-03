@@ -34,7 +34,7 @@ function Login() {
               <div className="form-outline mb-4">
                 <input
                   type="text"
-                  id="form3Example3"
+                  id="username"
                   className="form-control form-control-lg"
                   placeholder="Enter your username"
                   value={username}
@@ -48,7 +48,7 @@ function Login() {
               <div className="form-outline mb-3">
                 <input
                   type="password"
-                  id="form3Example4"
+                  id="password"
                   className="form-control form-control-lg"
                   placeholder="Enter password"
                   value={password}
@@ -62,6 +62,7 @@ function Login() {
               <div className="text-center text-lg-start mt-4 pt-2">
                 <button
                   type="button"
+                  id="login-button"
                   className="btn btn-primary btn-lg"
                   style={{
                     paddingLeft: '2.5rem',
